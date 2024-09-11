@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="melding">
+
+    </p>
+    <p id="melding_temlit"></p>
+
+    <p id="send">
+
+    </p>
+    <p id="send_temlit"></p>
+
+    <p id="alder">
+        
+    </p>
+    <p id="alder_temlit"></p>
+
+    <script>
+        //Skriver ut en variabel med navnet mitt
+        const user_name = "Sophia"
+
+        //Skriver ut user_name til HTML ved hjelp av konkatinering
+        document.getElementById("melding").innerHTML = "Hei " + user_name
+
+        console.log(user_name)
+
+        //Skriver ut user_name til HTML med template literal
+        document.getElementById("melding_temlit").innerHTML = `Hei ${user_name}. Går det bra med deg?`
+
+        //Skriver ut en variabel med mitt fødselsår
+        const user_birthyear = "1998"
+
+        // Skriver ut user_birthday til HTML med konkatinering
+        document.getElementById("send").innerHTML = "Jeg er født i " + user_birthyear
+
+        console.log(user_birthyear)
+
+        //Skriver ut user_birthyear til HTML med template literal
+        document.getElementById("send_temlit").innerHTML = `Jeg er født i ${user_birthyear}.`
+
+        //Skriver ut variabelen for mattestykke med alder
+        const age = "26"
+
+        console.log(age)
+
+        //Skriver ut age til HTML med template literal
+        document.getElementById("alder_temlit").innerHTML = `Jeg er ${age} år.`
+
+        //Skriver ut mattestykket for alder
+        document.getElementById("alder").innerHTML = 2024 - age
+    </script>
+</body>
+</html>
