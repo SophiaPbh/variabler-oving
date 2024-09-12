@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="familiemed">
+
+    </p>
+    <p id="familiemed_temlit"></p>
+    <p id="familiemedl">
+
+    </p>
+    <p id="familiemedl_temlit"></p>
+    <p id="familiemedle">
+
+    </p>
+    <p id="familiemedle_temlit"></p>
+    <p id="familiemedlem">
+
+    </p>
+    <p id="familiemedlem_temlit"></p>
+    <p id="average">
+
+    </p>
+
+    <script>
+        //Lager en variabel for alderen til far
+        const age = "37"
+        //Skriver ut HTML med konkatinering
+        document.getElementById("familiemed").innerHTML = "Far er " + age
+        //Skriver ut alder i konsoll
+        console.log(age)
+        //Skriver ut fars alder ved å bruke template literal
+        document.getElementById("familiemed_temlit").innerHTML = `Fars alder er ${age} år.`
+
+        //Lager en variabel for alderen til mor
+        const mor = "32"
+        //Skriver ut HTML med konkatinering
+        document.getElementById("familiemedl").innerHTML = "Mor er " + mor
+        //Skriver ut alder i konsoll
+        console.log(mor)
+        //Skriver ut fars alder ved å bruke template literal
+        document.getElementById("familiemedl_temlit").innerHTML = `Mors alder er ${mor} år.`
+
+        //Lager en variabel for alderen til datter
+        const datter = "7"
+        //Skriver ut HTML med konkatinering
+        document.getElementById("familiemedle").innerHTML = "Datteren er " + datter
+        //Skriver ut alder i konsoll
+        console.log(datter)
+        //Skriver ut fars alder ved å bruke template literal
+        document.getElementById("familiemedle_temlit").innerHTML = `Datterens alder er ${datter} år.`
+
+        //Lager en variabel for alderen til sønnen
+        const sonn = "2"
+        //Skriver ut HTML med konkatinering
+        document.getElementById("familiemedlem").innerHTML = "Sønnen er " + sonn
+        //Skriver ut alder i konsoll
+        console.log(sonn)
+        //Skriver ut fars alder ved å bruke template literal
+        document.getElementById("familiemedlem_temlit").innerHTML = `Sønnens alder er ${sonn} år.`
+
+        //Regner ut gjennomsnittsalderen for familien
+        document.getElementById("average").innerHTML = 78 / 4
+
+
+    </script>  
+</body>
+</html>
