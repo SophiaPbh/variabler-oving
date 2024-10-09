@@ -28,16 +28,16 @@
 
     <script>
         //Lager en variabel for alderen til far
-        const age = "37"
+        const far = 37
         //Skriver ut HTML med konkatinering
-        document.getElementById("familiemed").innerHTML = "Far er " + age
+        document.getElementById("familiemed").innerHTML = "Far er " + far
         //Skriver ut alder i konsoll
-        console.log(age)
+        console.log(far)
         //Skriver ut fars alder ved å bruke template literal
-        document.getElementById("familiemed_temlit").innerHTML = `Fars alder er ${age} år.`
+        document.getElementById("familiemed_temlit").innerHTML = `Fars alder er ${far} år.`
 
         //Lager en variabel for alderen til mor
-        const mor = "32"
+        const mor = 32
         //Skriver ut HTML med konkatinering
         document.getElementById("familiemedl").innerHTML = "Mor er " + mor
         //Skriver ut alder i konsoll
@@ -46,7 +46,7 @@
         document.getElementById("familiemedl_temlit").innerHTML = `Mors alder er ${mor} år.`
 
         //Lager en variabel for alderen til datter
-        const datter = "7"
+        const datter = 7
         //Skriver ut HTML med konkatinering
         document.getElementById("familiemedle").innerHTML = "Datteren er " + datter
         //Skriver ut alder i konsoll
@@ -55,7 +55,7 @@
         document.getElementById("familiemedle_temlit").innerHTML = `Datterens alder er ${datter} år.`
 
         //Lager en variabel for alderen til sønnen
-        const sonn = "2"
+        const sonn = 2
         //Skriver ut HTML med konkatinering
         document.getElementById("familiemedlem").innerHTML = "Sønnen er " + sonn
         //Skriver ut alder i konsoll
@@ -64,7 +64,13 @@
         document.getElementById("familiemedlem_temlit").innerHTML = `Sønnens alder er ${sonn} år.`
 
         //Regner ut gjennomsnittsalderen for familien
-        document.getElementById("average").innerHTML = 78 / 4
+        //2. total alder: legger sammen alle aldre
+        //3. gjennomsnittet er total alder delt på fire
+        const totalAge = mor + datter + far + sonn
+        const averageAge = totalAge / 4
+
+        //skriv ut til dokument <p> tag #average
+        document.getElementById("average").innerHTML = averageAge + " er familiens gjennomsnittsalder"
 
 
     </script>  
